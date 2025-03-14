@@ -1,0 +1,31 @@
+{
+    "name": "todo-app",
+    "version": "1.0.0",
+    "description": "Full-stack Todo Application with Next.js, Node.js, and PostgreSQL",
+    "scripts": {
+      "frontend": "cd frontend && npm run dev",
+      "backend": "cd backend && npm run dev",
+      "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
+      "install:frontend": "cd frontend && npm install",
+      "install:backend": "cd backend && npm install",
+      "install:all": "npm install && npm run install:frontend && npm run install:backend",
+      "build:frontend": "cd frontend && npm run build",
+      "start:frontend": "cd frontend && npm start",
+      "start:backend": "cd backend && npm start",
+      "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+      "migrate": "cd backend && npm run migrate",
+      "studio": "cd backend && npm run studio"
+    },
+    "keywords": [
+      "todo",
+      "nextjs",
+      "express",
+      "prisma",
+      "postgresql"
+    ],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "concurrently": "^8.2.1"
+    }
+  }
